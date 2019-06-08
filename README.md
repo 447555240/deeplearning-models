@@ -105,7 +105,8 @@
 - 一个简单的单层RNN（IMDB）[[PyTorch](pytorch_ipynb/rnn/rnn_simple_imdb.ipynb)]
 - 一个简单的单层RNN，带有打包序列，用于忽略填充字符（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_simple_packed_imdb.ipynb)]
 - 带有长短期记忆（LSTM）的RNN（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_imdb.ipynb)]
-- 带有长短期记忆（LSTM）的RNN，训练CSV格式的数据集（IMDB）[[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
+- 带有长短期记忆（LSTM）的RNN，使用预训练 GloVe 词向量 [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_imdb-glove.ipynb)]
+- 带有长短期记忆（LSTM）的RNN，训练 CSV 格式的数据集（IMDB）[[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
 - 带有门控单元（GRU）的RNN（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
 - 多层双向RNN（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
 
