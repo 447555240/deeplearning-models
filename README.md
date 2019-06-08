@@ -1,4 +1,5 @@
 ![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)
+![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 
 # 深度学习模型
 
@@ -17,7 +18,6 @@
 - 带有 Batch Normalization 的多层感知器 [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-batchnorm.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-batchnorm.ipynb)]
 - 手写反向传播的多层感知器 [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-lowlevel.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-fromscratch__sigmoid-mse.ipynb)]
 
-
 ## 卷积神经网络
 
 #### 基本
@@ -28,7 +28,6 @@
 #### 概念
 
 - 使用卷积层等效替换全连接层 [[PyTorch](pytorch_ipynb/cnn/fc-to-conv.ipynb)]
-
 
 #### 全卷积
 
@@ -59,7 +58,6 @@
 #### Network in Network
 
 - 在 CIFAR-10 数据集上训练 Network in Network 分类器 [[PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb)] 
-
 
 ## 度量学习
 
@@ -99,7 +97,6 @@
 
 ## 递归神经网络 (RNNs)
 
-
 #### 多对一：情感分析、分类
 
 - 一个简单的单层RNN（IMDB）[[PyTorch](pytorch_ipynb/rnn/rnn_simple_imdb.ipynb)]
@@ -112,8 +109,6 @@
 #### 多对多 / 序列对序列
 
 - 用于生成新文本的简单字符RNN（Charles Dickens） [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
-
-
 
 ## 序数回归
 
@@ -142,7 +137,6 @@
 - 在自己的文本数据上训练 Char-RNN [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
 - 在自己的文本数据集上使用 LSTM 进行情感分类 [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
 
-
 #### 并行计算
 
 - 使用 DataParallel 进行多 GPU 训练 -- 在名人面部属性数据集（CelebA）上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba-data-parallel.ipynb)]
@@ -157,8 +151,6 @@
 
 - 在 PyTorch 中获取中间变量的梯度 [[PyTorch](pytorch_ipynb/mechanics/manual-gradients.ipynb)]
 
-
-
 ## TensorFlow 工作流程和机制
 
 #### 自定义数据集
@@ -172,5 +164,3 @@
 #### 训练和预处理
 
 - 保存和加载模型 -- 保存为 TensorFlow Checkpoint 文件和 NumPy npz 文件 [[TensorFlow 1](tensorflow1_ipynb/mechanics/saving-and-reloading-models.ipynb)]
-
-
