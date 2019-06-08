@@ -33,6 +33,16 @@
 
 - 全卷积网络 [[PyTorch](pytorch_ipynb/cnn/cnn-allconv.ipynb)]
 
+#### 数据集介绍
+
+| 数据集 | 中文名称 | 样本数 | 图像尺寸 | 官方网站 |
+| ---- | ---- | ---- | ---- | ---- |
+| MNIST | 手写数字数据集 | 训练集 60000，测试集 10000 | (28, 28) | [MNIST](http://yann.lecun.com/exdb/mnist/) | 
+| CIFAR-10 | 加拿大高等研究院-10 | 训练集 50000，测试集 10000 | (32, 32) | [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) | 
+| SVHN | 街景门牌号 | 训练集 73257，测试集 26032，额外 531131 | 尺寸不一，裁剪后 (32, 32) | [SVHN](http://ufldl.stanford.edu/housenumbers/) |
+| CelebA | 名人面部属性数据集 | 202599 | 尺寸不一，图像宽度超过 200 | [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) |
+| Quickdraw | 快速涂鸦数据集 | 5000 万 | 原始尺寸是 (256, 256)，裁剪后为 (32, 32) | [Quickdraw](https://github.com/googlecreativelab/quickdraw-dataset) |
+
 #### AlexNet
 
 - 在 CIFAR-10 数据集上训练 AlexNet [[PyTorch](pytorch_ipynb/cnn/cnn-alexnet-cifar10.ipynb)]
@@ -40,24 +50,27 @@
 #### VGG
 
 - VGG-16 [[TensorFlow 1](tensorflow1_ipynb/cnn/cnn-vgg16.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16.ipynb)]
-- 在名人面部属性数据集（CelebA）上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb)]
+- 在 CelebA 上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb)]
 - VGG-19 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb)]
 
 #### ResNet
 
 - ResNet 和残差 [[PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb)]
-- 在手写数字数据集（MNIST）上使用 ResNet-18 训练数字分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb)]
-- 在名人面部属性数据集（CelebA）上使用 ResNet-18 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet18-celeba-dataparallel.ipynb)]
-- 在手写数字数据集（MNIST）上训练 ResNet-34 数字分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb)]
-- 在名人面部属性数据集（CelebA）上使用 ResNet-34 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-celeba-dataparallel.ipynb)]
-- 在手写数字数据集（MNIST）上使用 ResNet-50 训练数字分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet50-mnist.ipynb)]
-- 在名人面部属性数据集（CelebA）上使用 ResNet-50 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb)]
-- 在名人面部属性数据集（CelebA）上使用 ResNet-101 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb)]
-- 在名人面部属性数据集（CelebA）上使用 ResNet-152 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb)]
+
+| 数据集 | 模型 | 任务 | 地址 | 测试集准确率 |
+| ---- | ---- | ---- | ---- | ---- |
+| MNIST | ResNet-18 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb) | 99.06% |
+| MNIST | ResNet-34 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb) | 99.04% |
+| MNIST | ResNet-50 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet50-mnist.ipynb) | 98.39% |
+| CelebA | ResNet-18 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-celeba-dataparallel.ipynb) | 97.38% |
+| CelebA | ResNet-34 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-celeba-dataparallel.ipynb) | 97.56% |
+| CelebA | ResNet-50 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb) | 97.40% |
+| CelebA | ResNet-101 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb) | 97.52% |
+| CelebA | ResNet-152 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb) |
 
 #### Network in Network
 
-- 在 CIFAR-10 数据集上训练 Network in Network 分类器 [[PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb)] 
+- 在 CIFAR-10 上训练 Network in Network 分类器 [[PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb)] 
 
 ## 度量学习
 
@@ -125,8 +138,8 @@
 #### 自定义数据集
 
 - 使用 torch.utils.data 加载自定义数据集 -- CSV 文件转换为 HDF5 格式 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-csv.ipynb)]
-- 使用 torch.utils.data 加载自定义数据集 -- 来自名人面部属性数据集（CelebA）的面部图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-celeba.ipynb)]
-- 使用 torch.utils.data 加载自定义数据集 -- 来自你画我猜数据集（Quickdraw）的手绘图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- 来自 CelebA 的面部图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-celeba.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- 来自 Quickdraw 的手绘图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- 来自街景门牌号数据集（SVHN）的图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-svhn.ipynb)]
 
 #### 训练和预处理
