@@ -23,7 +23,7 @@
 #### 基本
 
 - 卷积神经网络 [[TensorFlow 1](tensorflow1_ipynb/cnn/cnn-basic.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-basic.ipynb)]
-- 使用 He 初始化的计算机加微量  [[PyTorch](pytorch_ipynb/cnn/cnn-he-init.ipynb)]
+- 使用 He 初始化的卷积神经网络  [[PyTorch](pytorch_ipynb/cnn/cnn-he-init.ipynb)]
 
 #### 概念
 
