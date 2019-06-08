@@ -121,7 +121,7 @@
 
 #### 多对多 / 序列对序列
 
-- 用于生成新文本的简单字符RNN（Charles Dickens） [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
+- Char-RNN 实现的文本生成器（Charles Dickens） [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
 
 ## 序数回归
 
@@ -152,7 +152,7 @@
 
 #### 并行计算
 
-- 使用 DataParallel 进行多 GPU 训练 -- 在名人面部属性数据集（CelebA）上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba-data-parallel.ipynb)]
+- 使用 DataParallel 进行多 GPU 训练 -- 在 CelebA 上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba-data-parallel.ipynb)]
 
 #### 其他
 
