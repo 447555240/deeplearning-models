@@ -22,7 +22,7 @@
 
 #### 基本
 
-- 卷积神经网络 [[TensorFlow 1](tensorflow1_ipynb/cnn/convnet.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-basic.ipynb)]
+- 卷积神经网络 [[TensorFlow 1](tensorflow1_ipynb/cnn/cnn-basic.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-basic.ipynb)]
 - 使用 He 初始化的计算机加微量  [[PyTorch](pytorch_ipynb/cnn/cnn-he-init.ipynb)]
 
 #### 概念
@@ -69,13 +69,13 @@
 
 #### 全连接自编码器
 
-- 自编码器 [[TensorFlow 1](tensorflow1_ipynb/autoencoder/autoencoder.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-basic.ipynb)]
+- 自编码器 [[TensorFlow 1](tensorflow1_ipynb/autoencoder/ae-basic.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-basic.ipynb)]
 
 #### 卷积自编码器
 
 - 反卷积 / 转置卷积实现的卷积自编码器[[TensorFlow 1](tensorflow1_ipynb/autoencoder/ae-deconv.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-deconv.ipynb)]
 - 转置卷积实现的卷积自编码器（没有使用池化操作） [[PyTorch](pytorch_ipynb/autoencoder/ae-deconv-nopool.ipynb)]
-- 最近邻插值实现的卷积自编码器 [[TensorFlow 1](tensorflow1_ipynb/autoencoder/autoencoder-conv-nneighbor.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor.ipynb)]
+- 最近邻插值实现的卷积自编码器 [[TensorFlow 1](tensorflow1_ipynb/autoencoder/ae-conv-nneighbor.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor.ipynb)]
 - 在 CelebA 上训练的最近邻插值卷积自编码器 [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor-celeba.ipynb)]
 - 在 Quickdraw 上训练的最近邻插值卷积自编码器 [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor-quickdraw-1.ipynb)]
 
@@ -121,16 +121,9 @@
 - 序数回归 CNN -- Niu et al. 2016 w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
 - 序数回归 CNN -- Beckham and Pal 2016 w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
 
-
-
-
-
-
 ## 技巧和窍门
 
 - 循环学习率 [[PyTorch](pytorch_ipynb/tricks/cyclical-learning-rate.ipynb)]
-
-
 
 ## PyTorch 工作流程和机制
 
@@ -139,11 +132,11 @@
 - 使用 torch.utils.data 加载自定义数据集 -- CSV 文件转换为 HDF5 格式 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-csv.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- 来自名人面部属性数据集（CelebA）的面部图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-celeba.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- 来自你画我猜数据集（Quickdraw）的手绘图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
-- 使用 torch.utils.data 加载自定义数据集 -- 来自街景门牌号数据集（SVHN）的图像 [[PyTorch](pytorch_ipynb/custom-data-loader-svhn.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- 来自街景门牌号数据集（SVHN）的图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-svhn.ipynb)]
 
 #### 训练和预处理
 
-- 在 DataLoader 中使用固定内存（pin_memory）技术（ [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-cifar10-pinmem.ipynb)]
+- 在 DataLoader 中使用固定内存（pin_memory）技术 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-cifar10-pinmem.ipynb)]
 - 标准化图像（Standardization） [[PyTorch](pytorch_ipynb/cnn/cnn-standardized.ipynb)]
 - 使用 torchvision 进行图像变换（数据增强） [[PyTorch](pytorch_ipynb/mechanics/torchvision-transform-examples.ipynb)]
 - 在自己的文本数据上训练 Char-RNN [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
@@ -156,9 +149,9 @@
 
 #### 其他
 
-- Sequential API 和 Hook 技术  [[PyTorch](pytorch_ipynb/mlp/mlp-sequential.ipynb)]
+- Sequential API 和 Hook 技术  [[PyTorch](pytorch_ipynb/mechanics/mlp-sequential.ipynb)]
 - 同层权值共享  [[PyTorch](pytorch_ipynb/mechanics/cnn-weight-sharing.ipynb)]
-- 使用 Matplotlib 在 Jupyter Notebook 中绘制实时训练曲线 [[PyTorch](pytorch_ipynb/mlp/plot-jupyter-matplotlib.ipynb)]
+- 使用 Matplotlib 在 Jupyter Notebook 中绘制实时训练曲线 [[PyTorch](pytorch_ipynb/mechanics/plot-jupyter-matplotlib.ipynb)]
 
 #### Autograd
 
