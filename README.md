@@ -43,34 +43,24 @@
 | CelebA | 名人面部属性数据集 | 202599 | 尺寸不一，图像宽度超过 200 | [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) |
 | Quickdraw | 快速涂鸦数据集 | 5000 万 | 原始尺寸是 (256, 256)，裁剪后为 (32, 32) | [Quickdraw](https://github.com/googlecreativelab/quickdraw-dataset) |
 
-#### AlexNet
-
-- 在 CIFAR-10 数据集上训练 AlexNet [[PyTorch](pytorch_ipynb/cnn/cnn-alexnet-cifar10.ipynb)]
-
-#### VGG
-
-- VGG-16 [[TensorFlow 1](tensorflow1_ipynb/cnn/cnn-vgg16.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16.ipynb)]
-- 在 CelebA 上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb)]
-- VGG-19 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb)]
-
-#### ResNet
-
-- ResNet 和残差 [[PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb)]
+#### 模型搭建与训练
 
 | 数据集 | 模型 | 任务 | 地址 | 测试集准确率 |
 | ---- | ---- | ---- | ---- | ---- |
+| CIFAR-10 | AlexNet | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-alexnet-cifar10.ipynb) | 66.63% |
+| CIFAR-10 | VGG-16 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg16.ipynb) | 75.43% |
+| CIFAR-10 | VGG-19 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb) | 74.56% |
+| CIFAR-10 | Network in Network | 图像分类 | [PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb) | 70.67% |
+| MNIST | ResNet 残差模块练习 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb) | 97.91% |
 | MNIST | ResNet-18 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb) | 99.06% |
 | MNIST | ResNet-34 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb) | 99.04% |
 | MNIST | ResNet-50 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet50-mnist.ipynb) | 98.39% |
+| CelebA | VGG-16 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb) | 90.72% |
 | CelebA | ResNet-18 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-celeba-dataparallel.ipynb) | 97.38% |
 | CelebA | ResNet-34 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-celeba-dataparallel.ipynb) | 97.56% |
 | CelebA | ResNet-50 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb) | 97.40% |
 | CelebA | ResNet-101 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb) | 97.52% |
 | CelebA | ResNet-152 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb) |
-
-#### Network in Network
-
-- 在 CIFAR-10 上训练 Network in Network 分类器 [[PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb)] 
 
 ## 度量学习
 
