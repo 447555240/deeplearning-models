@@ -1,184 +1,183 @@
 ![Python 3.7](https://img.shields.io/badge/Python-3.7-blue.svg)
 
-# Deep Learning Models
+# 深度学习模型
 
-A collection of various deep learning architectures, models, and tips for TensorFlow and PyTorch in Jupyter Notebooks.
+本项目讲述了深度学习中的结构、模型和技巧，使用的深度学习框架是 TensorFlow 和 PyTorch，代码和图文都以 Jupyter Notebook 的形式编写。
 
-## Traditional Machine Learning
+## 传统机器学习
 
-- Perceptron [[TensorFlow 1](tensorflow1_ipynb/basic-ml/perceptron.ipynb)] [[PyTorch](pytorch_ipynb/basic-ml/perceptron.ipynb)]
-- Logistic Regression [[TensorFlow 1](tensorflow1_ipynb/basic-ml/logistic-regression.ipynb)] [[PyTorch](pytorch_ipynb/basic-ml/logistic-regression.ipynb)]
-- Softmax Regression (Multinomial Logistic Regression) [[TensorFlow 1](tensorflow1_ipynb/basic-ml/softmax-regression.ipynb)] [[PyTorch](pytorch_ipynb/basic-ml/softmax-regression.ipynb)]
+- 感知器 [[TensorFlow 1](tensorflow1_ipynb/basic-ml/perceptron.ipynb)] [[PyTorch](pytorch_ipynb/basic-ml/perceptron.ipynb)]
+- 逻辑回归（二分类器） [[TensorFlow 1](tensorflow1_ipynb/basic-ml/logistic-regression.ipynb)] [[PyTorch](pytorch_ipynb/basic-ml/logistic-regression.ipynb)]
+- Softmax 回归（多分类器） [[TensorFlow 1](tensorflow1_ipynb/basic-ml/softmax-regression.ipynb)] [[PyTorch](pytorch_ipynb/basic-ml/softmax-regression.ipynb)]
 
-## Multilayer Perceptrons
+## 多层感知器
 
-- Multilayer Perceptron [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-basic.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-basic.ipynb)]
-- Multilayer Perceptron with Dropout [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-dropout.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-dropout.ipynb)]
-- Multilayer Perceptron with Batch Normalization [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-batchnorm.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-batchnorm.ipynb)]
-- Multilayer Perceptron with Backpropagation from Scratch [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-lowlevel.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-fromscratch__sigmoid-mse.ipynb)]
-
-
-## Convolutional Neural Networks
+- 多层感知器 [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-basic.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-basic.ipynb)]
+- 带有 Dropout 的多层感知器 [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-dropout.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-dropout.ipynb)]
+- 带有 Batch Normalization 的多层感知器 [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-batchnorm.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-batchnorm.ipynb)]
+- 手写反向传播的多层感知器 [[TensorFlow 1](tensorflow1_ipynb/mlp/mlp-lowlevel.ipynb)] [[PyTorch](pytorch_ipynb/mlp/mlp-fromscratch__sigmoid-mse.ipynb)]
 
 
-#### Basic
+## 卷积神经网络
 
-- Convolutional Neural Network [[TensorFlow 1](tensorflow1_ipynb/cnn/convnet.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-basic.ipynb)]
-- Convolutional Neural Network with He Initialization  [[PyTorch](pytorch_ipynb/cnn/cnn-he-init.ipynb)]
+#### 基本
 
-#### Concepts
+- 卷积神经网络 [[TensorFlow 1](tensorflow1_ipynb/cnn/convnet.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-basic.ipynb)]
+- 使用 He 初始化的计算机加微量  [[PyTorch](pytorch_ipynb/cnn/cnn-he-init.ipynb)]
 
-- Replacing Fully-Connnected by Equivalent Convolutional Layers [[PyTorch](pytorch_ipynb/cnn/fc-to-conv.ipynb)]
+#### 概念
+
+- 使用卷积层等效替换全连接层 [[PyTorch](pytorch_ipynb/cnn/fc-to-conv.ipynb)]
 
 
-#### All-Convolutional
+#### 全卷积
 
-- All-Convolutional Neural Network [[PyTorch](pytorch_ipynb/cnn/cnn-allconv.ipynb)]
+- 全卷积网络 [[PyTorch](pytorch_ipynb/cnn/cnn-allconv.ipynb)]
 
 #### AlexNet
 
-- AlexNet on CIFAR-10 [[PyTorch](pytorch_ipynb/cnn/cnn-alexnet-cifar10.ipynb)]
+- 在 CIFAR-10 数据集上训练 AlexNet [[PyTorch](pytorch_ipynb/cnn/cnn-alexnet-cifar10.ipynb)]
 
 #### VGG
 
-- Convolutional Neural Network VGG-16 [[TensorFlow 1](tensorflow1_ipynb/cnn/cnn-vgg16.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16.ipynb)]
-- VGG-16 Gender Classifier Trained on CelebA [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb)]
-- Convolutional Neural Network VGG-19 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb)]
+- VGG-16 [[TensorFlow 1](tensorflow1_ipynb/cnn/cnn-vgg16.ipynb)] [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16.ipynb)]
+- 在名人面部属性数据集（CelebA）上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb)]
+- VGG-19 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb)]
 
 #### ResNet
 
-- ResNet and Residual Blocks [[PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb)]
-- ResNet-18 Digit Classifier Trained on MNIST [[PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb)]
-- ResNet-18 Gender Classifier Trained on CelebA [[PyTorch](pytorch_ipynb/cnn/cnn-resnet18-celeba-dataparallel.ipynb)]
-- ResNet-34 Digit Classifier Trained on MNIST [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb)]
-- ResNet-34 Gender Classifier Trained on CelebA [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-celeba-dataparallel.ipynb)]
-- ResNet-50 Digit Classifier Trained on MNIST [[PyTorch](pytorch_ipynb/cnn/cnn-resnet50-mnist.ipynb)]
-- ResNet-50 Gender Classifier Trained on CelebA [[PyTorch](pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb)]
-- ResNet-101 Gender Classifier Trained on CelebA [[PyTorch](pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb)]
-- ResNet-152 Gender Classifier Trained on CelebA [[PyTorch](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb)]
+- ResNet 和残差 [[PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb)]
+- 在手写数字数据集（MNIST）上使用 ResNet-18 训练数字分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb)]
+- 在名人面部属性数据集（CelebA）上使用 ResNet-18 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet18-celeba-dataparallel.ipynb)]
+- 在手写数字数据集（MNIST）上训练 ResNet-34 数字分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb)]
+- 在名人面部属性数据集（CelebA）上使用 ResNet-34 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-celeba-dataparallel.ipynb)]
+- 在手写数字数据集（MNIST）上使用 ResNet-50 训练数字分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet50-mnist.ipynb)]
+- 在名人面部属性数据集（CelebA）上使用 ResNet-50 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb)]
+- 在名人面部属性数据集（CelebA）上使用 ResNet-101 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb)]
+- 在名人面部属性数据集（CelebA）上使用 ResNet-152 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb)]
 
 #### Network in Network
 
-- Network in Network CIFAR-10 Classifier [[PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb)] 
+- 在 CIFAR-10 数据集上训练 Network in Network 分类器 [[PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb)] 
 
 
-## Metric Learning
+## 度量学习
 
-- Siamese Network with Multilayer Perceptrons [[TensorFlow 1](tensorflow1_ipynb/metric/siamese-1.ipynb)]
+- 多层感知器实现的孪生网络 [[TensorFlow 1](tensorflow1_ipynb/metric/siamese-1.ipynb)]
 
-## Autoencoders
+## 自编码器
 
-#### Fully-connected Autoencoders
+#### 全连接自编码器
 
-- Autoencoder [[TensorFlow 1](tensorflow1_ipynb/autoencoder/autoencoder.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-basic.ipynb)]
+- 自编码器 [[TensorFlow 1](tensorflow1_ipynb/autoencoder/autoencoder.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-basic.ipynb)]
 
-#### Convolutional Autoencoders
+#### 卷积自编码器
 
-- Convolutional Autoencoder with Deconvolutions / Transposed Convolutions[[TensorFlow 1](tensorflow1_ipynb/autoencoder/ae-deconv.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-deconv.ipynb)]
-- Convolutional Autoencoder with Deconvolutions (without pooling operations) [[PyTorch](pytorch_ipynb/autoencoder/aer-deconv-nopool.ipynb)]
-- Convolutional Autoencoder with Nearest-neighbor Interpolation [[TensorFlow 1](tensorflow1_ipynb/autoencoder/autoencoder-conv-nneighbor.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor.ipynb)]
-- Convolutional Autoencoder with Nearest-neighbor Interpolation -- Trained on CelebA [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor-celeba.ipynb)]
-- Convolutional Autoencoder with Nearest-neighbor Interpolation -- Trained on Quickdraw [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor-quickdraw-1.ipynb)]
+- 反卷积 / 转置卷积实现的卷积自编码器[[TensorFlow 1](tensorflow1_ipynb/autoencoder/ae-deconv.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-deconv.ipynb)]
+- 转置卷积实现的卷积自编码器（没有使用池化操作） [[PyTorch](pytorch_ipynb/autoencoder/ae-deconv-nopool.ipynb)]
+- 最近邻插值实现的卷积自编码器 [[TensorFlow 1](tensorflow1_ipynb/autoencoder/autoencoder-conv-nneighbor.ipynb)] [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor.ipynb)]
+- 在 CelebA 上训练的最近邻插值卷积自编码器 [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor-celeba.ipynb)]
+- 在 Quickdraw 上训练的最近邻插值卷积自编码器 [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-nneighbor-quickdraw-1.ipynb)]
 
-#### Variational Autoencoders
+#### 变分自动编码器
 
-- Variational Autoencoder [[PyTorch](pytorch_ipynb/autoencoder/ae-var.ipynb)]
-- Convolutional Variational Autoencoder [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-var.ipynb)]
+- 变分自动编码器 [[PyTorch](pytorch_ipynb/autoencoder/ae-var.ipynb)]
+- 卷积变分自动编码器 [[PyTorch](pytorch_ipynb/autoencoder/ae-conv-var.ipynb)]
 
-#### Conditional Variational Autoencoders
+#### 条件变分自动编码器
 
-- Conditional Variational Autoencoder (with labels in reconstruction loss) [[PyTorch](pytorch_ipynb/autoencoder/ae-cvae.ipynb)]
-- Conditional Variational Autoencoder (without labels in reconstruction loss) [[PyTorch](pytorch_ipynb/autoencoder/ae-cvae_no-out-concat.ipynb)]
-- Convolutional Conditional Variational Autoencoder (with labels in reconstruction loss) [[PyTorch](pytorch_ipynb/autoencoder/ae-cnn-cvae.ipynb)]
-- Convolutional Conditional Variational Autoencoder (without labels in reconstruction loss) [[PyTorch](pytorch_ipynb/autoencoder/ae-cnn-cvae_no-out-concat.ipynb)]
+- 条件变分自动编码器（重建损失中带标签） [[PyTorch](pytorch_ipynb/autoencoder/ae-cvae.ipynb)]
+- 条件变分自动编码器（重建损失中没有标签） [[PyTorch](pytorch_ipynb/autoencoder/ae-cvae_no-out-concat.ipynb)]
+- 卷积条件变分自动编码器（重建损失中带标签） [[PyTorch](pytorch_ipynb/autoencoder/ae-cnn-cvae.ipynb)]
+- 卷积条件变分自动编码器（重建损失中没有标签） [[PyTorch](pytorch_ipynb/autoencoder/ae-cnn-cvae_no-out-concat.ipynb)]
 
-## General Adversarial Networks (GANs)
+## 生成对抗网络 (GANs)
 
-- Fully Connected GAN on MNIST [[TensorFlow 1](tensorflow1_ipynb/gan/gan.ipynb)] [[PyTorch](pytorch_ipynb/gan/gan.ipynb)]
-- Convolutional GAN on MNIST [[TensorFlow 1](tensorflow1_ipynb/gan/gan-conv.ipynb)] [[PyTorch](pytorch_ipynb/gan/gan-conv.ipynb)]
-- Convolutional GAN on MNIST with Label Smoothing [[PyTorch](pytorch_ipynb/gan/gan-conv-smoothing.ipynb)]
+- 在 MNIST 上训练的全连接 GAN [[TensorFlow 1](tensorflow1_ipynb/gan/gan.ipynb)] [[PyTorch](pytorch_ipynb/gan/gan.ipynb)]
+- 在 MNIST 上训练的卷积 GAN [[TensorFlow 1](tensorflow1_ipynb/gan/gan-conv.ipynb)] [[PyTorch](pytorch_ipynb/gan/gan-conv.ipynb)]
+- 在 MNIST 上使用标签平滑训练的卷积 GAN [[PyTorch](pytorch_ipynb/gan/gan-conv-smoothing.ipynb)]
 
-## Recurrent Neural Networks (RNNs)
-
-
-#### Many-to-one: Sentiment Analysis / Classification
-
-- A simple single-layer RNN (IMDB) [[PyTorch](pytorch_ipynb/rnn/rnn_simple_imdb.ipynb)]
-- A simple single-layer RNN with packed sequences to ignore padding characters (IMDB) [[PyTorch](pytorch_ipynb/rnn/rnn_simple_packed_imdb.ipynb)]
-- RNN with LSTM cells (IMDB) [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_imdb.ipynb)]
-- RNN with LSTM cells and Own Dataset in CSV Format (IMDB) [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
-- RNN with GRU cells (IMDB) [[PyTorch](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
-- Multilayer bi-directional RNN (IMDB) [[PyTorch](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
-
-#### Many-to-Many / Sequence-to-Sequence
-
-- A simple character RNN to generate new text (Charles Dickens) [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
+## 递归神经网络 (RNNs)
 
 
+#### 多对一：情感分析、分类
 
-## Ordinal Regression
+- 一个简单的单层RNN（IMDB）[[PyTorch](pytorch_ipynb/rnn/rnn_simple_imdb.ipynb)]
+- 一个简单的单层RNN，带有打包序列，用于忽略填充字符（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_simple_packed_imdb.ipynb)]
+- 带有长短期记忆（LSTM）的RNN（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_imdb.ipynb)]
+- 带有长短期记忆（LSTM）的RNN，训练CSV格式的数据集（IMDB）[[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
+- 带有门控单元（GRU）的RNN（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
+- 多层双向RNN（IMDB） [[PyTorch](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
 
-- Ordinal Regression CNN -- CORAL w. ResNet34 on AFAD-Lite [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-coral-afadlite.ipynb)]
-- Ordinal Regression CNN -- Niu et al. 2016 w. ResNet34 on AFAD-Lite [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
-- Ordinal Regression CNN -- Beckham and Pal 2016 w. ResNet34 on AFAD-Lite [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
+#### 多对多 / 序列对序列
+
+- 用于生成新文本的简单字符RNN（Charles Dickens） [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
 
 
 
+## 序数回归
+
+- 序数回归 CNN -- CORAL w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-coral-afadlite.ipynb)]
+- 序数回归 CNN -- Niu et al. 2016 w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
+- 序数回归 CNN -- Beckham and Pal 2016 w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
 
 
 
-## Tips and Tricks
-
-- Cyclical Learning Rate [[PyTorch](pytorch_ipynb/tricks/cyclical-learning-rate.ipynb)]
 
 
 
-## PyTorch Workflows and Mechanics
+## 技巧和窍门
 
-#### Custom Datasets
-
-- Using PyTorch Dataset Loading Utilities for Custom Datasets -- CSV files converted to HDF5 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-csv.ipynb)]
-- Using PyTorch Dataset Loading Utilities for Custom Datasets -- Face Images from CelebA [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-celeba.ipynb)]
-- Using PyTorch Dataset Loading Utilities for Custom Datasets -- Drawings from Quickdraw [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
-- Using PyTorch Dataset Loading Utilities for Custom Datasets -- Drawings from the Street View House Number (SVHN) Dataset [[PyTorch](pytorch_ipynb/custom-data-loader-svhn.ipynb)]
-
-#### Training and Preprocessing
-
-- Dataloading with Pinned Memory [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-cifar10-pinmem.ipynb)]
-- Standardizing Images [[PyTorch](pytorch_ipynb/cnn/cnn-standardized.ipynb)]
-- Image Transformation Examples [[PyTorch](pytorch_ipynb/mechanics/torchvision-transform-examples.ipynb)]
-- Char-RNN with Own Text File [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
-- Sentiment Classification RNN with Own CSV File [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
+- 循环学习率 [[PyTorch](pytorch_ipynb/tricks/cyclical-learning-rate.ipynb)]
 
 
-#### Parallel Computing
 
-- Using Multiple GPUs with DataParallel -- VGG-16 Gender Classifier on CelebA [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba-data-parallel.ipynb)]
+## PyTorch 工作流程和机制
 
-#### Other 
+#### 自定义数据集
 
-- Sequential API and hooks  [[PyTorch](pytorch_ipynb/mlp/mlp-sequential.ipynb)]
-- Weight Sharing Within a Layer  [[PyTorch](pytorch_ipynb/mechanics/cnn-weight-sharing.ipynb)]
-- Plotting Live Training Performance in Jupyter Notebooks with just Matplotlib  [[PyTorch](pytorch_ipynb/mlp/plot-jupyter-matplotlib.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- CSV 文件转换为 HDF5 格式 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-csv.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- 来自名人面部属性数据集（CelebA）的面部图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-celeba.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- 来自你画我猜数据集（Quickdraw）的手绘图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- 来自街景门牌号数据集（SVHN）的图像 [[PyTorch](pytorch_ipynb/custom-data-loader-svhn.ipynb)]
+
+#### 训练和预处理
+
+- 在 DataLoader 中使用固定内存（pin_memory）技术（ [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-cifar10-pinmem.ipynb)]
+- 标准化图像（Standardization） [[PyTorch](pytorch_ipynb/cnn/cnn-standardized.ipynb)]
+- 使用 torchvision 进行图像变换（数据增强） [[PyTorch](pytorch_ipynb/mechanics/torchvision-transform-examples.ipynb)]
+- 在自己的文本数据上训练 Char-RNN [[PyTorch](pytorch_ipynb/rnn/char_rnn-charlesdickens.ipynb)]
+- 在自己的文本数据集上使用 LSTM 进行情感分类 [[PyTorch](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
+
+
+#### 并行计算
+
+- 使用 DataParallel 进行多 GPU 训练 -- 在名人面部属性数据集（CelebA）上使用 VGG-16 训练性别分类器 [[PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba-data-parallel.ipynb)]
+
+#### 其他
+
+- Sequential API 和 Hook 技术  [[PyTorch](pytorch_ipynb/mlp/mlp-sequential.ipynb)]
+- 同层权值共享  [[PyTorch](pytorch_ipynb/mechanics/cnn-weight-sharing.ipynb)]
+- 使用 Matplotlib 在 Jupyter Notebook 中绘制实时训练曲线 [[PyTorch](pytorch_ipynb/mlp/plot-jupyter-matplotlib.ipynb)]
 
 #### Autograd
 
-- Getting Gradients of an Intermediate Variable in PyTorch  [[PyTorch](pytorch_ipynb/mechanics/manual-gradients.ipynb)]
+- 在 PyTorch 中获取中间变量的梯度 [[PyTorch](pytorch_ipynb/mechanics/manual-gradients.ipynb)]
 
 
 
-## TensorFlow Workflows and Mechanics
+## TensorFlow 工作流程和机制
 
-#### Custom Datasets
+#### 自定义数据集
 
-- Chunking an Image Dataset for Minibatch Training using NumPy NPZ Archives [[TensorFlow 1](tensorflow1_ipynb/mechanics/image-data-chunking-npz.ipynb)]
-- Storing an Image Dataset for Minibatch Training using HDF5 [[TensorFlow 1](tensorflow1_ipynb/mechanics/image-data-chunking-hdf5.ipynb)]
-- Using Input Pipelines to Read Data from TFRecords Files [[TensorFlow 1](tensorflow1_ipynb/mechanics/tfrecords.ipynb)]
-- Using Queue Runners to Feed Images Directly from Disk [[TensorFlow 1](tensorflow1_ipynb/mechanics/file-queues.ipynb)]
-- Using TensorFlow's Dataset API [[TensorFlow 1](tensorflow1_ipynb/mechanics/dataset-api.ipynb)]
+- 使用 NumPy npz 格式打包小批量图像数据集 [[TensorFlow 1](tensorflow1_ipynb/mechanics/image-data-chunking-npz.ipynb)]
+- 使用 HDF5 格式保存小批量图像数据集 [[TensorFlow 1](tensorflow1_ipynb/mechanics/image-data-chunking-hdf5.ipynb)]
+- 使用输入管道在 TFRecords 文件中读取数据 [[TensorFlow 1](tensorflow1_ipynb/mechanics/tfrecords.ipynb)]
+- 使用队列运行器（Queue Runners）从硬盘中直接读取图像 [[TensorFlow 1](tensorflow1_ipynb/mechanics/file-queues.ipynb)]
+- 使用 TensorFlow 数据集 API [[TensorFlow 1](tensorflow1_ipynb/mechanics/dataset-api.ipynb)]
 
-#### Training and Preprocessing
+#### 训练和预处理
 
-- Saving and Loading Trained Models -- from TensorFlow Checkpoint Files and NumPy NPZ Archives [[TensorFlow 1](tensorflow1_ipynb/mechanics/saving-and-reloading-models.ipynb)]
+- 保存和加载模型 -- 保存为 TensorFlow Checkpoint 文件和 NumPy npz 文件 [[TensorFlow 1](tensorflow1_ipynb/mechanics/saving-and-reloading-models.ipynb)]
 
 
