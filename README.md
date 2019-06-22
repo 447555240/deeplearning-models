@@ -51,6 +51,7 @@
 | CIFAR-10 | VGG-16 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg16.ipynb) | 75.43% |
 | CIFAR-10 | VGG-19 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb) | 74.56% |
 | CIFAR-10 | Network in Network | 图像分类 | [PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb) | 70.67% |
+| CIFAR-10 | ResNet-101 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet101-cifar10.ipynb) | 76.50% |
 | MNIST | ResNet 残差模块练习 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb) | 97.91% |
 | MNIST | ResNet-18 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb) | 99.06% |
 | MNIST | ResNet-34 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb) | 99.04% |
@@ -135,6 +136,7 @@
 
 #### 训练和预处理
 
+- 生成训练集和验证集 [[PyTorch](pytorch_ipynb/mechanics/validation-splits.ipynb)]
 - 在 DataLoader 中使用固定内存（pin_memory）技术 [[PyTorch](pytorch_ipynb/cnn/cnn-resnet34-cifar10-pinmem.ipynb)]
 - 标准化图像（Standardization） [[PyTorch](pytorch_ipynb/cnn/cnn-standardized.ipynb)]
 - 使用 torchvision 进行图像变换（数据增强） [[PyTorch](pytorch_ipynb/mechanics/torchvision-transform-examples.ipynb)]
