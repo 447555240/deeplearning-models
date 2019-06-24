@@ -119,7 +119,7 @@
 
 - 序数回归 CNN -- CORAL w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-coral-afadlite.ipynb)]
 - 序数回归 CNN -- Niu et al. 2016 w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
-- 序数回归 CNN -- Beckham and Pal 2016 w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-niu-afadlite.ipynb)]
+- 序数回归 CNN -- Beckham and Pal 2016 w. ResNet34（AFAD-Lite） [[PyTorch](pytorch_ipynb/ordinal/ordinal-cnn-beckham2016-afadlite.ipynb)]
 
 ## 技巧和窍门
 
