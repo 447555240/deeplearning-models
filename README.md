@@ -134,6 +134,7 @@
 - 使用 torch.utils.data 加载自定义数据集 -- 来自 Quickdraw 的手绘图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- 来自街景门牌号数据集（SVHN）的图像 [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-svhn.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- 亚洲面部数据集 (AFAD) [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader-afad.ipynb)]
+- 使用 torch.utils.data 加载自定义数据集 -- 照片年代追溯数据集（Dating Historical Color Images） [[PyTorch](pytorch_ipynb/mechanics/custom-data-loader_dating-historical-color-images.ipynb)]
 
 #### 训练和预处理
 
