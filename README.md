@@ -97,7 +97,7 @@
 
 - 在 MNIST 上训练的全连接 GAN [[TensorFlow 1](tensorflow1_ipynb/gan/gan.ipynb)] [[PyTorch](pytorch_ipynb/gan/gan.ipynb)]
 - 在 MNIST 上训练的卷积 GAN [[TensorFlow 1](tensorflow1_ipynb/gan/gan-conv.ipynb)] [[PyTorch](pytorch_ipynb/gan/gan-conv.ipynb)]
-- 在 MNIST 上使用标签平滑训练的卷积 GAN [[PyTorch](pytorch_ipynb/gan/gan-conv-smoothing.ipynb)]
+- 在 MNIST 上使用标签平滑训练的卷积 GAN [[TensorFlow 1](tensorflow1_ipynb/gan/gan-conv-smoothing.ipynb)] [[PyTorch](pytorch_ipynb/gan/gan-conv-smoothing.ipynb)]
 
 ## 递归神经网络 (RNNs)
 
