@@ -124,6 +124,7 @@
 ## 技巧和窍门
 
 - 循环学习率 [[PyTorch](pytorch_ipynb/tricks/cyclical-learning-rate.ipynb)]
+- 动态增加 Batch Size 来模拟退火（在 CIFAR-10 上训练 AlexNet） [[PyTorch](pytorch_ipynb/tricks/cnn-alexnet-cifar10-batchincrease.ipynb)]
 
 ## PyTorch 工作流程和机制
 
