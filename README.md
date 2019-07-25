@@ -52,10 +52,12 @@
 | CIFAR-10 | VGG-19 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb) | 74.56% |
 | CIFAR-10 | Network in Network | 图像分类 | [PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb) | 70.67% |
 | CIFAR-10 | ResNet-101 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet101-cifar10.ipynb) | 76.50% |
+| CIFAR-10 | DenseNet-121 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-densenet121-mnist.ipynb) | 76.70% |
 | MNIST | ResNet 残差模块练习 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb) | 97.91% |
 | MNIST | ResNet-18 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb) | 99.06% |
 | MNIST | ResNet-34 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb) | 99.04% |
 | MNIST | ResNet-50 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet50-mnist.ipynb) | 98.39% |
+| MNIST | DenseNet-121 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-densenet121-mnist.ipynb) | 98.50% |
 | CelebA | VGG-16 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb) | 90.72% |
 | CelebA | ResNet-18 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-celeba-dataparallel.ipynb) | 97.38% |
 | CelebA | ResNet-34 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-celeba-dataparallel.ipynb) | 97.56% |
