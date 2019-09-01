@@ -47,23 +47,25 @@
 
 | 数据集 | 模型 | 任务 | 地址 | 测试集准确率 |
 | ---- | ---- | ---- | ---- | ---- |
-| CIFAR-10 | AlexNet | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-alexnet-cifar10.ipynb) | 66.63% |
+| CIFAR-10 | LeNet-5 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-lenet5-cifar10.ipynb) | 61.70% |
+| CIFAR-10 | Network in Network | 图像分类 | [PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb) | 70.67% |
+| CIFAR-10 | AlexNet | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-alexnet-cifar10.ipynb) | 73.68% |
 | CIFAR-10 | VGG-16 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg16.ipynb) | 75.43% |
 | CIFAR-10 | VGG-19 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg19.ipynb) | 74.56% |
-| CIFAR-10 | Network in Network | 图像分类 | [PyTorch](pytorch_ipynb/cnn/nin-cifar10.ipynb) | 70.67% |
-| CIFAR-10 | ResNet-101 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet101-cifar10.ipynb) | 76.50% |
-| CIFAR-10 | DenseNet-121 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-densenet121-mnist.ipynb) | 76.70% |
+| CIFAR-10 | DenseNet-121 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-densenet121-cifar10.ipynb) | 74.97% |
+| CIFAR-10 | ResNet-101 | 图像分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet101-cifar10.ipynb) | 75.15% |
 | MNIST | ResNet 残差模块练习 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/resnet-ex-1.ipynb) | 97.91% |
+| MNIST | LeNet-5 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-lenet5-mnist.ipynb) | 98.47% |
 | MNIST | ResNet-18 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-mnist.ipynb) | 99.06% |
 | MNIST | ResNet-34 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-mnist.ipynb) | 99.04% |
 | MNIST | ResNet-50 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet50-mnist.ipynb) | 98.39% |
-| MNIST | DenseNet-121 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-densenet121-mnist.ipynb) | 98.50% |
-| CelebA | VGG-16 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb) | 90.72% |
+| MNIST | DenseNet-121 | 数字分类 | [PyTorch](pytorch_ipynb/cnn/cnn-densenet121-mnist.ipynb) |  |
+| CelebA | VGG-16 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-vgg16-celeba.ipynb) | 95.48% |
 | CelebA | ResNet-18 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet18-celeba-dataparallel.ipynb) | 97.38% |
 | CelebA | ResNet-34 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet34-celeba-dataparallel.ipynb) | 97.56% |
 | CelebA | ResNet-50 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb) | 97.40% |
 | CelebA | ResNet-101 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb) | 97.52% |
-| CelebA | ResNet-152 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb) |
+| CelebA | ResNet-152 | 性别分类 | [PyTorch](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb) |  |
 
 ## 度量学习
 
@@ -127,6 +129,7 @@
 
 - 循环学习率 [[PyTorch](pytorch_ipynb/tricks/cyclical-learning-rate.ipynb)]
 - 动态增加 Batch Size 来模拟退火（在 CIFAR-10 上训练 AlexNet） [[PyTorch](pytorch_ipynb/tricks/cnn-alexnet-cifar10-batchincrease.ipynb)]
+- 梯度裁剪（在 MNIST 上训练 MLP） [[PyTorch](pytorch_ipynb/tricks/gradclipping_mlp.ipynb)]
 
 ## PyTorch 工作流程和机制
 
