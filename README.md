@@ -100,8 +100,10 @@
 ## 生成对抗网络 (GANs)
 
 - 在 MNIST 上训练的全连接 GAN [TensorFlow 1: [GitHub](tensorflow1_ipynb/gan/gan.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/gan/gan.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/gan/gan.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gan/gan.ipynb)]
+- 在 MNIST 上训练的全连接 Wasserstein GAN [PyTorch: [GitHub](pytorch_ipynb/gan/wgan-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gan/wgan-1.ipynb)]
 - 在 MNIST 上训练的卷积 GAN [TensorFlow 1: [GitHub](tensorflow1_ipynb/gan/gan-conv.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/gan/gan-conv.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/gan/gan-conv.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gan/gan-conv.ipynb)]
 - 在 MNIST 上使用标签平滑训练的卷积 GAN [TensorFlow 1: [GitHub](tensorflow1_ipynb/gan/gan-conv-smoothing.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/gan/gan-conv-smoothing.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/gan/gan-conv-smoothing.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gan/gan-conv-smoothing.ipynb)]
+- 在 MNIST 上训练的卷积 Wasserstein GAN [PyTorch: [GitHub](pytorch_ipynb/gan/dc-wgan-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gan/dc-wgan-1.ipynb)]
 
 ## 递归神经网络 (RNNs)
 
