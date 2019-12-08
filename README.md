@@ -66,6 +66,13 @@
 | CelebA | ResNet-50 | 性别分类 | PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-resnet50-celeba-dataparallel.ipynb) | 97.40% |
 | CelebA | ResNet-101 | 性别分类 | PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-resnet101-celeba.ipynb) | 97.52% |
 | CelebA | ResNet-152 | 性别分类 | PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-resnet152-celeba.ipynb) |  |
+| Quickdraw | LeNet | 图像分类 | PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-lenet5-quickdraw.ipynb)  \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-lenet5-quickdraw.ipynb) | 88.94% |
+| Quickdraw | ResNet-34 | 图像分类 | PyTorch: [GitHub](pytorch_ipynb/cnn/cnn-resnet34-quickdraw.ipynb)  \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/cnn/cnn-resnet34-quickdraw.ipynb) | 97.73% |
+
+## 规范化层
+
+- Network in Network 训练 CIFAR-10 时，批规范化层（BatchNorm）放在激活函数前后的差异  [PyTorch: [GitHub](pytorch_ipynb/cnn/nin-cifar10_batchnorm.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/cnn/nin-cifar10_batchnorm.ipynb)]  
+- Network in Network 训练 CIFAR-10 时使用 Filter Response Normalization [PyTorch: [GitHub](pytorch_ipynb/cnn/nin-cifar10_filter-response-norm.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/cnn/nin-cifar10_filter-response-norm.ipynb)] 
 
 ## 度量学习
 
@@ -75,11 +82,13 @@
 
 #### 全连接自编码器
 
-- 自编码器 [TensorFlow 1: [GitHub](tensorflow1_ipynb/autoencoder/ae-basic.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/autoencoder/ae-basic.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-basic.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-basic.ipynb)]
+- 自编码器（MNIST） [TensorFlow 1: [GitHub](tensorflow1_ipynb/autoencoder/ae-basic.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/autoencoder/ae-basic.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-basic.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-basic.ipynb)]
+- 自编码器（MNIST）+ Scikit-Learn 随机森林分类器 [TensorFlow 1: [GitHub](tensorflow1_ipynb/autoencoder/ae-basic-with-rf.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/autoencoder/ae-basic.ipynb)]  
 
 #### 卷积自编码器
 
-- 反卷积 / 转置卷积实现的卷积自编码器[TensorFlow 1: [GitHub](tensorflow1_ipynb/autoencoder/ae-deconv.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/autoencoder/ae-deconv.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-deconv.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-deconv.ipynb)]
+- 反卷积 / 转置卷积实现的卷积自编码器 [TensorFlow 1: [GitHub](tensorflow1_ipynb/autoencoder/ae-deconv.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/autoencoder/ae-deconv.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-deconv.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-deconv.ipynb)]
+- 具有反卷积和连续Jaccard距离的卷积自动编码器 [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-deconv-jaccard.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-deconv-jaccard.ipynb)]
 - 转置卷积实现的卷积自编码器（没有使用池化操作） [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-deconv-nopool.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-deconv-nopool.ipynb)]
 - 最近邻插值实现的卷积自编码器 [TensorFlow 1: [GitHub](tensorflow1_ipynb/autoencoder/ae-conv-nneighbor.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/tensorflow1_ipynb/autoencoder/ae-conv-nneighbor.ipynb)] [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-conv-nneighbor.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-conv-nneighbor.ipynb)]
 - 在 CelebA 上训练的最近邻插值卷积自编码器 [PyTorch: [GitHub](pytorch_ipynb/autoencoder/ae-conv-nneighbor-celeba.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/autoencoder/ae-conv-nneighbor-celeba.ipynb)]
@@ -109,10 +118,11 @@
 
 - Most Basic Graph Neural Network with Gaussian Filter on MNIST    
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-1.ipynb)]
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-1.ipynb)]
 - Basic Graph Neural Network with Edge Prediction on MNIST    
-&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-edge-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-edge-1.ipynb)]
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-edge-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-edge-1.ipynb)]
 - Basic Graph Neural Network with Spectral Graph Convolution on MNIST  
-&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-graph-spectral-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-graph-spectral-1.ipynb)]
+&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-graph-spectral-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-graph-spectral-1.ipynb)]
 
 ## 递归神经网络 (RNNs)
 
@@ -124,7 +134,10 @@
 - 带有长短期记忆（LSTM）的RNN，使用预训练 GloVe 词向量 [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_lstm_packed_imdb-glove.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_lstm_packed_imdb-glove.ipynb)]
 - 带有长短期记忆（LSTM）的RNN，训练 CSV 格式的数据集（IMDB）[PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_lstm_packed_own_csv_imdb.ipynb)]
 - 带有门控单元（GRU）的RNN（IMDB） [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
-- 多层双向RNN（IMDB） [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
+- 多层双向 GRU（IMDB） [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_gru_packed_imdb.ipynb)]
+- 多层双向 LSTM 训练 CSV 格式的数据集（AG News）[PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_agnews.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_agnews.ipynb)]
+- 多层双向 LSTM 训练 CSV 格式的数据集（Yelp Review Polarity） [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_yelp-polarity.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_yelp-polarity.ipynb)]
+- 多层双向 LSTM 训练 CSV 格式的数据集（Amazon Review Polarity） [PyTorch: [GitHub](pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_amazon-polarity.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/rnn/rnn_bi_multilayer_lstm_own_csv_amazon-polarity.ipynb)]
 
 #### 多对多 / 序列对序列
 
@@ -142,10 +155,15 @@
 - 动态增加 Batch Size 来模拟退火（在 CIFAR-10 上训练 AlexNet） [PyTorch: [GitHub](pytorch_ipynb/tricks/cnn-alexnet-cifar10-batchincrease.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/tricks/cnn-alexnet-cifar10-batchincrease.ipynb)]
 - 梯度裁剪（在 MNIST 上训练 MLP） [PyTorch: [GitHub](pytorch_ipynb/tricks/gradclipping_mlp.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/tricks/gradclipping_mlp.ipynb)]
 
+## 迁移学习
+
+- 迁移学习（在 CIFAR-10 上使用在 ImageNet 上预训练过的 VGG16） [PyTorch: [GitHub](pytorch_ipynb/transfer/transferlearning-vgg16-cifar10-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/transfer/transferlearning-vgg16-cifar10-1.ipynb)]
+
 ## PyTorch 工作流程和机制
 
 #### 自定义数据集
 
+- 自定义 DataLoader 读取 PNG 文件 [PyTorch: [GitHub](pytorch_ipynb/mechanics/custom-dataloader-png/custom-dataloader-example.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/mechanics/custom-dataloader-png/custom-dataloader-example.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- CSV 文件转换为 HDF5 格式 [PyTorch: [GitHub](pytorch_ipynb/mechanics/custom-data-loader-csv.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/mechanics/custom-data-loader-csv.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- 来自 CelebA 的面部图像 [PyTorch: [GitHub](pytorch_ipynb/mechanics/custom-data-loader-celeba.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/mechanics/custom-data-loader-celeba.ipynb)]
 - 使用 torch.utils.data 加载自定义数据集 -- 来自 Quickdraw 的手绘图像 [PyTorch: [GitHub](pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/mechanics/custom-data-loader-quickdraw.ipynb)]
@@ -172,7 +190,7 @@
 - 同层权值共享  [PyTorch: [GitHub](pytorch_ipynb/mechanics/cnn-weight-sharing.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/mechanics/cnn-weight-sharing.ipynb)]
 - 使用 Matplotlib 在 Jupyter Notebook 中绘制实时训练曲线 [PyTorch: [GitHub](pytorch_ipynb/mechanics/plot-jupyter-matplotlib.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/mechanics/plot-jupyter-matplotlib.ipynb)]
 
-#### Autograd
+#### 自动求梯度（Autograd）
 
 - 在 PyTorch 中获取中间变量的梯度 [PyTorch: [GitHub](pytorch_ipynb/mechanics/manual-gradients.ipynb) \| [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/mechanics/manual-gradients.ipynb)]
 
