@@ -117,7 +117,6 @@
 ## 图神经网络 (GNNs)
 
 - Most Basic Graph Neural Network with Gaussian Filter on MNIST    
-&nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/rasbt/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-1.ipynb)]
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-1.ipynb)]
 - Basic Graph Neural Network with Edge Prediction on MNIST    
 &nbsp;&nbsp; [PyTorch: [GitHub](pytorch_ipynb/gnn/gnn-basic-edge-1.ipynb) | [Nbviewer](https://nbviewer.jupyter.org/github/ypwhs/deeplearning-models/blob/master/pytorch_ipynb/gnn/gnn-basic-edge-1.ipynb)]
